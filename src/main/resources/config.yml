@@ -1,0 +1,104 @@
+# ${project.artifactId} v.${project.version}
+# Created by Velinquish <3
+
+# What will appear in front of every message sent by the plugin
+plugin-prefix: '&d&lCycle &8» &7'
+
+# Main command for ${project.artifactId}
+main-command: 'cycle'
+# Plugin aliases - alternatives to COMMAND
+plugin-aliases:
+    - 'daynight'
+    - 'daynightcycle'
+    
+# Permission for configuring Meteors. The %action% placeholder will be replaced with the following valid actions:
+# - enable
+# - disable
+# - reload
+permission: 'cycle.%action%'
+
+world: 'world'
+
+# The link shown when /discord is executed
+discord: 'http://discord.cosmicguns.com'
+
+# Bosses in the boss cycle
+boss-cycle:
+    - banditking
+    - ''
+    - guardianboss
+    - ''
+    - skeletalboss
+    - ''
+
+# Dimension-specific bosses that are not part of the usual boss cycle
+dimensional-bosses:
+    space_wither:
+        # x, where this boss spawns every x cycles
+        frequency: 5
+        # The interval of time in the current boss cycle to spawn it in after the start of the current cycle
+        begin: 6000 # Default 5 minutes (when night comes)
+        end: 8400 # Default 7 minutes (2 minutes after night)
+        # Permission required to see the message broadcast
+        permission: worlds.see.space
+        # What to broadcast to the entire server when the mob spawns
+        broadcast: '&c&lBOSS! &7The &4Withered Chieftain&7 has appeared in space!'
+            
+
+boss-command: 'boss spawn %mythicmob% %mythicmob%instant %mythicmob%drops %loc%'
+
+# Where the boss spawns
+boss-locations:
+    guardianboss:
+        world: 'world'
+        x: 0.0
+        y: 0.0
+        z: 0.0
+    skeletalboss:
+        world: 'world'
+        x: 0.0
+        y: 0.0
+        z: 0.0
+    banditking:
+        world: 'world'
+        x: 0.0
+        y: 0.0
+        z: 0.0
+    space_wither:
+        world: 'world'
+        x: 0.0
+        y: 0.0
+        z: 0.0
+
+# The time to set the world to when it becomes day, in ticks. Default is 4:00 PM. TIME WILL STAY STILL!!
+day-time: 10000
+# The time to set the world to when it becomes night, in ticks. Default is 9:00 PM. TIME WILL STAY STILL!!
+night-time: 15000
+# The time to set the world to when it becomes dawn, in ticks. Default is 5:00 AM. TIME WILL STAY STILL!!
+dawn-time: 23000
+
+# In interval of time between every time the world is set to day
+cycle-length: 12000 # Default 10 minutes
+# The length of time after the cycle starts that the world is set to dawn
+dawn-start: 5960 # Default 2 seconds before night
+# The length of time after the cycle starts that the world is set to night
+night-start: 6000
+# The time, in ticks, the meteor-warning announcement activates before the meteor spawns.
+meteor-warning: 60 # Default 3 seconds before the meteor spawns
+
+# INTERVALS - Random intervals of time during which (randomly chosen) the specified event will occur.
+# Ticks time after the cycle starts that meteor spawns. 1000 ticks = 1 Minecraft hour.
+meteor:
+    begin: 9000 # Default 0:00 AM (2.5 minutes after night)
+    end: 15000 # Default 12:00 PM (2.5 minutes after it becomes day again)
+comet:
+    # The number of cycles that pass between each comet. Make this 0 for the comet to spawn every cycle.
+    comet-interval: 1
+boss:
+    begin: 6000 # Default 5 minutes (when night comes)
+    end: 8400 # Default 7 minutes (2 minutes after night)
+
+# Enable debug mode
+debug: true
+# Do not touch this unless you know what you are doing!
+config-version: 1

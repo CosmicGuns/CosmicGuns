@@ -1,0 +1,5 @@
+name: CosmicGuns
+main: net.velinquish.cosmicguns.CosmicGuns
+version: 1.0.0-BETA
+author: Velinquish
+softdepend: [CrackShot,MythicMobs]

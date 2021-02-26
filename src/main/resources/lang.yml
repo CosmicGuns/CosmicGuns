@@ -1,0 +1,45 @@
+# You may turn any message here into something like this with hover/run/suggest effects on the text.
+# Each element of the list is another segment of the message with different effects.
+command-message:
+  - message: '&8&m============&3&l Cycle &7Commands &8&m============'
+  # If new-line is true, the next segment will appear on a new line. Otherwise, it'll be attached to the end of the last segment.
+  - new-line: true
+    message: '&3/cycle help&8: &7Displays this message'
+    hover: '&eClick to run'
+    run: '/cycle help'
+  - new-line: true
+    message: '&3/cycle enable&8: &7Unpauses the cycle'
+    hover: '&eClick to run'
+    run: '/cycle enable'
+  - new-line: true
+    message: '&3/cycle disable&8: &7Pauses the cycle'
+    hover: '&eClick to run'
+    run: '/cycle disable'
+  - new-line: true
+    message: '&3/cycle reload&8: &7Reloads the configuration files'
+    hover: '&eClick to run'
+    run: '/cycle reload'
+  - new-line: true
+    message: '&3/cycle about&8: &7Gives you plugin information'
+    hover: '&eClick to run'
+    run: '/cycle about'
+    
+command-spawn-usage: '%prefix%&3Usage: &b/cycle spawn &f<boss id>'
+command-raw-usage: '%prefix%&3Usage: &b/raw &f<message>'
+command-rawto-usage: '%prefix%&3Usage: &b/raw &f<player> <message>'
+
+plugin-reloaded: '%prefix%Cycle has been successfully &3&nreloaded!'
+cycle-enabled: '%prefix%The day/night cycle has begun.'
+cycle-disabled: '%prefix%The day/night cycle has been paused.'
+discord-format: '&9&lDiscord &8» &7%link%'
+
+meteor-spawning: '&cA meteor is spawning...'
+meteor-spawned: '&8(&c&l!&8) &7A meteor has spawned!'
+comet-spawning: '&cA meteor and a comet are spawning...'
+comet-spawned: '&8(&c&l!&8) &7The meteor and comet have spawned!'
+boss-spawned: '&8(&c&l!&8) &7A boss has spawned! Go take it down quickly!'
+night: '&8(&5&l!&8) &7Night has fallen. Danger will rule the streets once again.'
+day: '&8(&e&l!&8) &7Day has risen. Surface mobs will no longer spawn.'
+
+no-permission: '%prefix%You must have the permission &3&n%permission%&7 to execute this command.'
+player-not-found: '%prefix%The specified player was not found.'

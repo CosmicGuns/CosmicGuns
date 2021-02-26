@@ -1,0 +1,10 @@
+net\velinquish\cosmicguns\commands\CommandManager.class
+net\velinquish\cosmicguns\commands\ReloadCommand.class
+net\velinquish\cosmicguns\RawCommand.class
+net\velinquish\cosmicguns\CosmicGuns.class
+net\velinquish\cosmicguns\commands\DisableCommand.class
+net\velinquish\cosmicguns\commands\VersionCommand.class
+net\velinquish\cosmicguns\commands\DiscordCommand.class
+net\velinquish\cosmicguns\commands\EnableCommand.class
+net\velinquish\cosmicguns\commands\SpawnerCommand.class
+net\velinquish\cosmicguns\RawtoCommand.class
